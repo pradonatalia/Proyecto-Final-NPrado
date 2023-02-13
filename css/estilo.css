@@ -27,7 +27,7 @@
     right: 10px;
 }
 .inicio{
-    height:90vh;
+    /* height:90vh; */
     background-size: cover;
     background-image: url(../img/inicio.jpg)      
 }
@@ -87,9 +87,12 @@ h4{
 }
 .masdetalle{
     background-color: black;
-    height: 135vh;    
-    overflow:hidden;
+    /* height: 135vh;    
+    overflow:hidden; */
 }
+
+/* DUDA: Si no lo pongo alto fijo a los fondos (me pasó tanto en el inicio como en masdetalle, me genera un espacio entre esa parte y el footer. cómo lo acomodo? No puedo dejar el alto fijo porque cuando achico pantalla se va el texto por fuera */
+
 .actividad{
     text-transform: uppercase;
     font-size: larger;
@@ -153,6 +156,9 @@ form {
     right: 0;
     margin: auto;    
 }
+
+/* DUDA: Al posicionar el cuadro asociate con position absolute el footer me queda por arriba, cómo lo acomodo? */
+
 .links{
     display: flex;
     flex-direction: row;
