@@ -32,8 +32,7 @@
     background-image: url(../img/inicio.jpg)      
 }
 main h1, h2 {
-    text-transform: uppercase;
-    color:#444444;
+    text-transform: uppercase;    
     text-align: center;    
     padding: 0px,30px;
 }
@@ -43,8 +42,7 @@ main h1, h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    color:#444444;
+    align-items: center;    
 }
 .cajita {
     margin: 20px;
@@ -55,6 +53,7 @@ main h1, h2 {
     text-align: center;
     background-color: #edf0f1;
     opacity: 40%;
+    color:#444444;
 }
 .caja{
     margin-left:10px;
@@ -76,6 +75,9 @@ h4{
     .botonwsp{
         display:none;
     }
+    .mapa {
+        display: none;
+    }
     
 }
 .actividades{    
@@ -85,7 +87,7 @@ h4{
 }
 .masdetalle{
     background-color: black;
-    height: 130vh;    
+    height: 135vh;    
     overflow:hidden;
 }
 .actividad{
@@ -103,7 +105,8 @@ form {
     display: flex;    
     flex-direction: column;
     align-items: center;
-    justify-content:center;        
+    justify-content:center; 
+    background-color: black;       
 }
 .contenedor{
     display: flex;
@@ -116,6 +119,46 @@ form {
     padding: 5px;
     width: 40vw;
 }
-.box{
+.subcaja1{
     width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+.subcajita{
+    width: 40vw;      
+    
+}
+.caja3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.cajita p {
+    text-transform: uppercase;
+    font-size: larger;
+}
+.logo2{
+    width: 50px;
+    height: 50px;
+}
+.asociate{
+    width: 50vw;
+    position:absolute;
+    top: 200px;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;    
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+.links li {
+    list-style-type: none;
 }
