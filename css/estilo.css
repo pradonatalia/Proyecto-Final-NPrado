@@ -67,6 +67,15 @@ main{
     color:#edf0f1;
         
 }
+
+.cajitaAsociate {
+    margin: 20px;
+    border: 1px solid #444444;
+    border-radius: 4px;
+    box shadow: 3px 3px 10px;
+    text align:center;
+    
+}
  .cajita p {
     color:rgb(58, 90, 64);
  }
@@ -90,6 +99,14 @@ main{
  .contenedorActividades p {
     text-transform: uppercase;    
  }
+
+ .contenedorNosotros h2, p {
+    color:rgb(58, 90, 64);
+    text-transform: uppercase; 
+
+ }
+
+ 
 
  
 
@@ -143,7 +160,7 @@ body {
 }
 h4{
     padding: 2px;
-    font-size:medium;
+    font-size:1rem;
 }
 
 .imagenEncabezado {
@@ -211,7 +228,7 @@ form {
     width: 50px;
     height: 50px;
 }
-.asociate{
+/* .asociate{
     width: 50vw;
     position:absolute;
     top: 200px;
@@ -219,7 +236,7 @@ form {
     left: 0;
     right: 0;
     margin: auto;    
-}
+} */
 
 /* DUDA: Al posicionar el cuadro asociate con position absolute el footer me queda por arriba, cómo lo acomodo? */
 
@@ -232,11 +249,6 @@ form {
 .links li {
     list-style-type: none;
 }
-.pie {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    }
 
 @media (max-width: 768px){
     .botonwsp{
