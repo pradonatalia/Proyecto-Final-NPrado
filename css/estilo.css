@@ -1,14 +1,18 @@
+/* genérico */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
   
 } 
+
+/* nav */
 .logo {
     width: 50px;
     height: 50px;
@@ -29,8 +33,10 @@ body {
      }
  li, a, button{
     font-weight: 500; 
-    font-size: 15px;
+    font-size: 18px;
     }
+
+    /* botonwsp */
 .botonwsp img {
     width:50px;
     height: 50px;
@@ -38,17 +44,23 @@ body {
     bottom: 10px;
     right: 10px;
 }
+
+/* main */
 .inicio{    
     background-size: cover;
     background-image: url(../img/inicio.jpg);
-    }
+}
+.inicio h1, h2 {
+    text-transform: uppercase;
+    color: #edf0f1;
+    text-align: center;
+}
 main{
     grid-area: main;
 }
-
 .sedes {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction:column;
     justify-content:center;
@@ -60,68 +72,43 @@ main{
     border: 1px solid #444444;
     border-radius: 4px;
     box-shadow: 3px 3px 10px;
-    text-align: center;
-    /* background-color:#edf0f1; */
-    width:40%;
-    /* opacity: 10%; */
-    color:#edf0f1;
-        
+    text-align: center;    
+    width:40%;    
+    color:#edf0f1;        
 }
-
+.cajita p {
+    color:rgb(58, 90, 64);
+    text-transform: uppercase;
+    font-size: larger;
+}    
 .cajitaAsociate {
     margin: 20px;
     border: 1px solid #444444;
     border-radius: 4px;
     box shadow: 3px 3px 10px;
-    text align:center;
-    
+    text align: center;    
 }
- .cajita p {
-    color:rgb(58, 90, 64);
- }
-
  .contenedorActividades {
   margin: 50px;
   padding: 30px;
   border: solid 1px #99A799;
-  border-radius: 4px;  
-  /* background-color:darkseagreen;
-  opacity: 60%; */
+  border-radius: 4px;    
   box-shadow: 3px 3px 10px;
-
- }
-
+}
  .contenedorActividades h2, h1 {
     color:rgb(58, 90, 64);
     text-transform: uppercase;    
- }
-
+}
  .contenedorActividades p {
     text-transform: uppercase;    
- }
-
+}
  .contenedorNosotros h2, p {
     color:rgb(58, 90, 64);
     text-transform: uppercase; 
-
- }
-
- 
-
- 
-
- /* .cajitaActividades {
-    padding:10%;
-    margin: 10px;
-    padding: 10px;
-    height: 250px;
-    width: 40%;
-    border: 1px solid #444444;
-    border-radius: 4px;
-    box-shadow: 3px 3px 10px;
-    text-align: center;
- } */
-
+}
+.imagenEncabezado {
+    width: 100%;
+}
  /* Acá poner el mixing más algunas prop como en .contenedorActividades */
  .cajitaFormulario {
     margin: 50px;
@@ -131,59 +118,6 @@ main{
     background-image:url(../img/formulario.jpg);
     opacity: 80%;
     box-shadow: 3px 3px 10px;
-
- }
-.caja{
-    margin-left:10px;
-    margin-right: 10px;
-}
-.inicio h1, h2 {
-    text-transform: uppercase;
-    color: #edf0f1;
-    text-align: center;
-}
-
-footer{
-    text-align: center;   
-    grid-area: footer;   
-    width: 100%;
-    height: 30px;    
-    background: linear-gradient(to right,rgb(132, 169, 140), rgb(82, 121, 111) )
-}
-body {
-    display: grid;
-    grid-template-areas: 
-    "nav nav nav"
-    "main main main"
-    "footer footer footer";
-    gap:0;
-}
-h4{
-    padding: 2px;
-    font-size:1rem;
-}
-
-.imagenEncabezado {
-    width: 100%;
-}
-.masdetalle{
-    background-color: black;
-    /* height: 135vh;    
-    overflow:hidden; */
-}
-
-/* DUDA: Si no lo pongo alto fijo a los fondos (me pasó tanto en el inicio como en masdetalle, me genera un espacio entre esa parte y el footer. cómo lo acomodo? No puedo dejar el alto fijo porque cuando achico pantalla se va el texto por fuera */
-
-.actividad{
-    text-transform: uppercase;
-    font-size: larger;
-    /* text-decoration: none; */
-    color:#444444
-}
-.nuestrobox{
-    display:flex;
-    align-items: center;
-    justify-content: center;
 }
 form {    
     display: flex;    
@@ -203,43 +137,10 @@ form {
     padding: 5px;
     width: 40vw;
 }
-.subcaja1{
-    width: 40vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;    
-}
-.subcajita{
-    width: 40vw;      
-    
-}
-.caja3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-.cajita p {
-    text-transform: uppercase;
-    font-size: larger;
-}
 .logo2{
     width: 50px;
     height: 50px;
 }
-/* .asociate{
-    width: 50vw;
-    position:absolute;
-    top: 200px;
-    bottom: 100px;
-    left: 0;
-    right: 0;
-    margin: auto;    
-} */
-
-/* DUDA: Al posicionar el cuadro asociate con position absolute el footer me queda por arriba, cómo lo acomodo? */
-
 .links{
     display: flex;
     flex-direction: row;
@@ -250,13 +151,37 @@ form {
     list-style-type: none;
 }
 
+/* footer */
+footer{
+    text-align: center;     
+    grid-area: footer;   
+    width: 100%;
+    height: 30px;    
+    background: linear-gradient(to right,rgb(132, 169, 140), rgb(82, 121, 111) )
+}
+h4{
+    padding: 2px;
+    font-size:1rem;
+}
+
+/* grid */
+body {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+    gap:0;
+}
+
+/* mediasqueries */
 @media (max-width: 768px){
     .botonwsp{
         display:none;
     }
-    .mapa {
+    /* .mapa {
         display: none;
-    }
+    } */
     .cajita{
         width: 90%;
     }
